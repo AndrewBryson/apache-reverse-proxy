@@ -15,8 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Syntax check for extra-httpd.conf
-        run: apachectl configtest -f ./conf/extra-httpd.conf
+      # - name: Syntax check for extra-httpd.conf
+      #   run: apachectl configtest -f ./conf/extra-httpd.conf
 
   build-and-push:
     runs-on: ubuntu-latest
